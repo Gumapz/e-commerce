@@ -609,7 +609,7 @@ footer{
 }
 
 .shoes img{
-    width: 20dvw;
+    width: 18dvw;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 .5dvw 0 rgb(155, 155, 155);
@@ -668,7 +668,7 @@ footer{
     }
 
     .shoes img {
-        width: 15dvw; /* Adjust image width for smaller screens */
+        width: 20dvw; /* Adjust image width for smaller screens */
         margin-right: 10px; /* Adjust margin for smaller screens */
     }
 
@@ -678,12 +678,12 @@ footer{
 
     .size a {
         padding: 5px; /* Adjust link padding for smaller screens */
-        font-size: 1.5dvw; /* Adjust link font size for smaller screens */
+        font-size: 1.7dvw; /* Adjust link font size for smaller screens */
     }
 
     .quantity input {
-        width: 70px; /* Adjust input width for smaller screens */
-        height: 30px; /* Adjust input height for smaller screens */
+        width: 60px; /* Adjust input width for smaller screens */
+        height: 20px; /* Adjust input height for smaller screens */
         font-size: 12px; /* Adjust input font size for smaller screens */
     }
 
