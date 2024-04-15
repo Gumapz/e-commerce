@@ -539,10 +539,10 @@ footer{
 
 .modal-content {
     background-color: #fefefe;
-    margin: 10% auto; /* 15% from the top and centered */
+    margin: 15% auto; /* 15% from the top and centered */
     padding: 30px;
     border: 1px solid #888;
-    width: 45%; /* Could be more or less, depending on screen size */
+    width: 55dvw; /* Could be more or less, depending on screen size */
     height:auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
