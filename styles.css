@@ -1,0 +1,643 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 8%; /* Adjust padding for responsiveness */
+    transition: all 0.3s;
+}
+
+.logo img {
+    max-width: 70px; /* Adjust max-width for responsiveness */
+    height: auto;
+    margin-right: 10px;
+}
+
+.business-name {
+    position: relative;
+    color: #fff;
+    right: 5%; /* Adjust right position for responsiveness */
+}
+
+.navigation {
+    display: flex;
+    margin-right: 10%; /* Adjust margin-right for responsiveness */
+}
+
+.navigation a {
+    color: #fff;
+    font-size: 16px; /* Adjust font size for responsiveness */
+    text-transform: capitalize;
+    padding: 10px 15px; /* Adjust padding for responsiveness */
+    font-weight: 400;
+    transition: all .42s ease;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.navigation a:hover {
+    color: #000;
+}
+
+.nav-icon .btn {
+    color: #fff;
+    font-size: 16px; /* Adjust font size for responsiveness */
+    font-weight: 400;
+    transition: all 0.3s;
+}
+
+.nav-icon .btn:hover {
+    color: #000;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i {
+    margin-right: 15px; /* Adjust margin-right for responsiveness */
+    color: #fff;
+    font-size: 20px; /* Adjust font size for responsiveness */
+    font-weight: 400;
+    transition: all .42s ease;
+    transition: all 0.3s;
+}
+
+.nav-icon i:hover {
+    transform: scale(1.1);
+    color: #000;
+}
+
+/* sticky */
+header.sticky{
+    background-color: #014c95;
+    padding: 7px 8%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .navigation {
+        margin-right: 5%; /* Adjust margin-right for smaller screens */
+    }
+
+    .logo img {
+        max-width: 40px; /* Adjust max-width for smaller screens */
+    }
+
+    .business-name {
+        right: 3%; /* Adjust right position for smaller screens */
+        font-size: 15px;
+        right: .5%;
+    }
+
+    .navigation a {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        padding: 10px 10px; /* Adjust padding for smaller screens */
+    }
+
+    .nav-icon i {
+        margin-right: 10px; /* Adjust margin-right for smaller screens */
+        font-size: 15px; /* Adjust font size for smaller screens */
+    }
+    
+}
+
+section{
+    padding: 5% 10%;
+}
+
+footer{
+    padding: 5% 10%;
+}
+
+/* sale */
+.sale {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap; /* Prevent wrapping of child elements */
+    position: relative;
+    top: -20px;
+    background-image: url(image/sale.jpg);
+    background-size: cover;
+    transition: all 0.3s;
+}
+
+.scrollable-content {
+    width: 100%; /* Set the width of your content to 100% */
+    max-width: 1200px; /* Set the maximum width of your content */
+    padding: 0 -10px; /* Add some padding for better appearance */
+    transition: all 0.3s;
+}
+
+.scrollable-content img {
+    display: inline-block; /* Make child elements display in a row */
+    width: 15%; /* Set the width of each child element */
+    height: auto; /* Set the height of each child element */
+    background-color: #ccc;
+    margin-right: 10px; /* Add some space between child elements */
+    transition: all 0.3s;
+}
+
+.scrollable-content img:hover{
+    transform: scale(0.9);
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .scrollable-content img {
+        width: 100px; /* Decrease width for smaller screens */
+        height: 120px; /* Decrease height for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .scrollable-content img {
+        width: 80px; /* Further decrease width for smaller screens */
+        height: 100px; /* Further decrease height for smaller screens */
+    }
+}
+
+
+/* Home */
+.home{
+    width: 100%;
+    height: 50vh;
+    background-image: url(image/bg6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    padding: 9% 15%;
+    transition: all 0.3s;
+}
+
+.main-text h5{
+    color: #fff;
+    font-size: 1.5dvw;
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.main-text h1{
+    color: #000;
+    font-size: 3dvw;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+    transition: all 0.3s;
+}
+
+.main-text p{
+    color: #cedaff;
+    font-size: 2dvw;
+    font-style: italic;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+@media only screen and (max-width: 768px){
+    .home{
+        height: 30vh;
+    }
+}
+
+/* trending product css*/
+.active {
+    position: relative;
+}
+
+.center-text h2 {
+    color: #111;
+    font-size: 2.5rem; /* Adjust font size for responsiveness */
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 2rem; /* Adjust margin for responsiveness */
+    transition: all 0.3s;
+}
+
+.center-text span {
+    color: #000;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust min and max width for responsiveness */
+    gap: 2rem; /* Adjust gap for responsiveness */
+    transition: all 0.3s;
+}
+
+.row {
+    position: relative;
+    transition: all .40s;
+}
+
+.row img {
+    width: 100%; /* Adjust image width for responsiveness */
+    height: auto;
+    transition: all .40s;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.row img:hover {
+    transform: scale(0.9);
+}
+
+.product-text h5 {
+    position: absolute;
+    top: 1rem; /* Adjust top position for responsiveness */
+    left: 1rem; /* Adjust left position for responsiveness */
+    color: #fff;
+    font-size: 0.8rem; /* Adjust font size for responsiveness */
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 0.2rem 0.5rem; /* Adjust padding for responsiveness */
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.ratting i {
+    color: #ff8c00;
+    font-size: 1.2rem; /* Adjust font size for responsiveness */
+    transition: all 0.3s;
+}
+
+.price h4 {
+    color: #111;
+    font-size: 1rem; /* Adjust font size for responsiveness */
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: all 0.3s;
+}
+
+.price p {
+    color: #151515;
+    font-size: 1rem; /* Adjust font size for responsiveness */
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+/* client reviews */
+.client-reviews {
+    background-color: #f3f4f6;
+}
+
+.reviews {
+    text-align: center;
+}
+
+.reviews h3 {
+    color: #111;
+    font-size: 1.8rem; /* Adjust font size for responsiveness */
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.reviews img {
+    width: 5rem; /* Adjust image width for responsiveness */
+    height: auto;
+    border-radius: 50%;
+    margin: 1rem 0; /* Adjust margin for responsiveness */
+    transition: all 0.3s;
+}
+
+.reviews p {
+    color: #707070;
+    font-size: 1rem; /* Adjust font size for responsiveness */
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 1rem; /* Adjust margin for responsiveness */
+    transition: all 0.3s;
+}
+
+.reviews h2 {
+    font-size: 1.5rem; /* Adjust font size for responsiveness */
+    color: #000;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 0.2rem; /* Adjust margin for responsiveness */
+    transition: all 0.3s;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust min and max width for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .center-text h2 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .product-text h5 {
+        font-size: 0.7rem; /* Adjust font size for smaller screens */
+        padding: 0.1rem 0.3rem; /* Adjust padding for smaller screens */
+    }
+
+    .ratting i {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .price h4 {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    .price p {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+
+    .reviews h3 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .reviews img {
+        width: 4rem; /* Adjust image width for smaller screens */
+        margin: 0.5rem 0; /* Adjust margin for smaller screens */
+    }
+
+    .reviews p {
+        font-size: 0.8rem; /* Adjust font size for smaller screens */
+        margin-bottom: 0.5rem; /* Adjust margin for smaller screens */
+    }
+
+    .reviews h2 {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        margin-bottom: 0.1rem; /* Adjust margin for smaller screens */
+    }
+}
+
+
+/* contact */
+.contact{
+    background-color: #d4e9ff;
+}
+
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto)); /* Change auto-fit to auto-fill */
+    gap: 3rem;
+    transition: all 0.3s;
+}
+/* 
+.first-info img{
+    width: 100px;
+    height: auto;
+} */
+.logo{
+    font-size: 25px;
+    color: blue;
+    font-weight: 800;
+}
+.contact-info h4{
+    color: #212529;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contact-info p{
+    color: #565656;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+}
+.contact-info p:hover{
+    color: #014c95;
+}
+
+.social-icon i{
+    color: #565656;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all.42s;
+}
+.social-icon i:hover{
+    transform: scale(1.3);
+}
+
+.end-text{
+    background-color: #b1b3b1;
+    text-align: center;
+    padding: 20px;
+}
+.end-text p{
+    color: #111;
+    text-transform: capitalize;
+}
+
+
+
+/* dropdown */
+.category{
+    display: none;
+}
+
+#dropdown {
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: absolute;
+    width: 150px;
+    top: 65%;
+    left: 54%;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#dropdown a {
+    display: block;
+    color: #111;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#dropdown a:hover {
+    color: #ccc;
+}
+
+@media only screen and (max-width: 768px) {
+    #dropdown {
+        width: 100px;
+    }
+
+    #dropdown a{
+        font-size: 12px;
+    }
+}
+
+.separator {
+    border-top: 1px solid #ccc;
+    margin: 5px;
+}
+
+.trending-product {
+    background-color: #dfe2df;
+    display: none; 
+  }
+  .active {
+    display: block; 
+  }
+
+
+/* trending product css*/
+.product{
+    position: relative;
+    top: -50px;
+}
+
+/* cart */
+/* .cart{
+
+} */
+
+
+.modal, .modal2, .modal3,.modal4,.modal5,.modal6,.modal7,.modal8,.modal9,.modal10,.modal11,.modal12,
+.modal13,.modal14,.modal15,.modal16,.modal17,.modal18,.modal19,.modal20,.modal21,.modal22,.modal23,.modal24,.modal25,
+.modal26,.modal27,.modal28,.modal29,.modal30,.modal31,.modal32,.modal33,.modal34,.modal35{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 45%; /* Could be more or less, depending on screen size */
+    height:auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.close, .close2,.close3,.close4,.close5,.close6,.close7,.close8,.close9,.close10,.close11,.close12,.close13,
+.close14,.close15,.close16,.close17,.close18,.close19,.close20,.close21,.close22,.close23,.close24,.close25,
+.close26,.close27,.close28,.close29,.close30,.close31,.close32,.close33,.close34,.close35{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,.close2:hover,.close3:hover,.close4:hover,.close5:hover,.close6:hover,.close7:hover,.close8:hover,.close9:hover,
+.close10:hover,.close11:hover,.close12:hover,.close13:hover,.close14:hover,.close2:hover,.close15:hover,.close16:hover,.close17:hover,
+.close18:hover,.close19:hover,.close21:hover,.close22:hover,.close23:hover,.close24:hover,.close25:hover,.close35:hover,.close26:hover,
+.close27:hover,.close28:hover,.close29:hover,.close30:hover,.close31:hover,.close32:hover,.close33:hover,.close34:hover,
+
+.close:focus, .close2:focus,.close3:focus,.close4:focus,.close5:focus,.close6:focus,.close7:focus,.close8:focus,.close9:focus,.close10:focus,
+.close11:focus,.close12:focus,.close13:focus,.close14:focus,.close15:focus,.close16:focus,.close17:focus,.close18:focus,.close19:focus,.close20:focus,
+.close21:focus,.close22:focus,.close23:focus,.close24:focus,.close25:focus,.close26:focus,.close27:focus,.close28:focus,.close29:focus,.close30:focus,
+.close31:focus,.close32:focus,.close33:focus,.close34:focus,.close35:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.cart button{
+    border: 2px solid green;
+    background-color: green;
+    padding: .5dvw .5dvw;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    font-size: 1dvw;
+    left: .5dvw;
+    cursor: pointer;
+}
+.cart button:hover{
+    border: 2px solid rgb(12, 68, 12);
+    background-color: rgb(12, 68, 12);
+}
+
+.shoes img{
+    width: 15dvw;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 .5dvw 0 rgb(155, 155, 155);
+    margin-right: 1.5dvw;
+}
+
+.parent{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cart{
+    text-align: right;
+}
+
+
+.size label{
+    font-size: 1.4dvw;
+    color: #000;
+    font-weight: 400;
+}
+
+.size a{
+    text-decoration: none;
+    padding: .4dvw .4dvw;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.2dvw;
+    color: #000;
+    font-weight: 600;
+}
+
+.size a:hover{
+    background-color: #014c95;
+    color: white;
+}
+
+.quantity input{
+    border: 2px solid black;
+    padding-left: .2dvw;
+    width: 8dvw;
+    height: 2dvw;
+    font-size: 1.2dvw;
+}
+.size h1{
+    font-size: 1.7dvw;
+    position: relative;
+    top: 1.5dvw;
+}

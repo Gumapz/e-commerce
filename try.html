@@ -1,0 +1,348 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horizontal Scrollbar Section</title>
+<style>
+    .scrollable-section {
+        width: 100%;
+        height: 300px; /* Adjust the height as needed */
+        overflow-x: auto;
+        white-space: nowrap; /* Prevent wrapping of child elements */
+    }
+
+    .scrollable-content {
+        width: 1200px; /* Set the width of your content */
+    }
+
+    .scrollable-content div {
+        display: inline-block; /* Make child elements display in a row */
+        width: 200px; /* Set the width of each child element */
+        height: 200px; /* Set the height of each child element */
+        background-color: #ccc;
+        margin-right: 10px; /* Add some space between child elements */
+    }
+</style>
+</head>
+<body>
+    <div class="scrollable-section">
+        <div class="scrollable-content">
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+             Add more items as needed 
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section Change</title>
+<style>
+  /* Basic styling */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .trending-product {
+    display: none; /* Hide all sections by default */
+  }
+  .active {
+    display: block; /* Display active section */
+  }
+
+  /* trending product css*/
+.trending-product{
+    position: relative;
+    top: -50px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto)); 
+    gap: 2rem;
+}
+
+.row{
+    position: relative;
+    transition: all .40s;
+}
+
+.row img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+
+.row img:hover{
+    transform: scale(0.9);
+}
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+.heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+
+.heart-icon:hover{
+    color: #ee1c47;
+}
+
+.ratting i{
+    color: #ff8c00;
+    font-size: 18px;
+}
+
+.price h4{
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.price p{
+    color: #151515;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* trending product css*/
+.active{
+    position: relative;
+    top: 20px;
+}
+
+.center-text h2{
+    color: #111;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.center-text span{
+    color: #ee1c47;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto)); 
+    gap: 2rem;
+}
+
+.row{
+    position: relative;
+    transition: all .40s;
+}
+
+.row img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+
+.row img:hover{
+    transform: scale(0.9);
+}
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+.heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+
+.heart-icon:hover{
+    color: #ee1c47;
+}
+
+.ratting i{
+    color: #ff8c00;
+    font-size: 18px;
+}
+
+.price h4{
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.price p{
+    color: #151515;
+    font-size: 14px;
+    font-weight: 600;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Header</h1>
+  <button class="sectionBtn" data-section="section1">Section 1</button>
+  <button class="sectionBtn" data-section="section2">Section 2</button>
+</header>
+
+<!-- Trending product section -->
+<section class="trending-product active" id="section1" >
+    <div class="center-text">
+        <h2>Our Trending <span>Products</span></h2>
+    </div>
+
+    <div class="products">
+        <div class="row">
+            <img src="image/pic1.jpg" alt="">
+            <div class="product-text">
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class='bx bx-heart'></i>
+            </div>
+            <div class="ratting">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+
+            <div class="price">
+                <h4>Half Running Set</h4>
+                <p>₱600</p>
+                <button>Add to cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+   
+        <div class="row">
+            <img src="image/pic2.jpg" alt="">
+            <div class="product-text">
+                <h5>New</h5>
+            </div>
+            <div class="heart-icon">
+                <i class='bx bx-heart'></i>
+            </div>
+            <div class="ratting">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bx-star'></i>
+                <i class='bx bx-star'></i>
+            </div>
+
+            <div class="price">
+                <h4>sports Shoes</h4>
+                <p>₱600</p>
+                <button>Add to cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="trending-product" >
+    
+</section>
+
+<footer class="trending-product" id="section2">
+    <div class="products">
+        <div class="row">
+            <img src="image/pic3.jpg" alt="">
+            <div class="product-text">
+                <h5>Sale</h5>
+            </div>
+            <div class="heart-icon">
+                <i class='bx bx-heart'></i>
+            </div>
+            <div class="ratting">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+                <i class='bx bx-star'></i>
+            </div>
+
+            <div class="price">
+                <h4>Women Shoes</h4>
+                <p>₱600</p>
+                <button>Add to cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+    
+        <div class="row">
+            <img src="image/pic4.jpg" alt="">
+            <div class="product-text">
+                <h5>New</h5>
+            </div>
+            <div class="heart-icon">
+                <i class='bx bx-heart'></i>
+            </div>
+            <div class="ratting">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+
+            <div class="price">
+                <h4>Sports Shoes</h4>
+                <p>₱600</p>
+                <button>Add to cart</button>
+                <button>Buy</button>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Event listener for section buttons
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.sectionBtn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          // Hide all sections
+          document.querySelectorAll('.trending-product').forEach(function(section) {
+            section.classList.remove('active');
+          });
+          // Display the selected section
+          document.getElementById(this.getAttribute('data-section')).classList.add('active');
+        });
+      });
+    });
+  </script>
+  
+
+</body>
+</html>
+

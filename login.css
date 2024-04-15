@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(image/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    width: 25%;
+    height: auto;
+    position: relative;
+    left: 200px;
+    top: 150px;
+}
+
+form {
+    border: 1px solid black;
+    box-shadow: 0 0 15px 0 rgb(41, 41, 41);
+    background-color: aliceblue;
+    border-radius: 10px;
+    position: absolute;
+    height: auto;
+    width: 35%;
+    top: 15%;
+    left: 55%;
+}
+
+.login {
+    padding: 80px 90px;
+    font-size: 20px;
+}
+
+.login input {
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 5px;
+    background-color: white;
+    width: 300px;
+    height: 40px;
+    padding: 0 5px;
+}
+
+h1 {
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.btn a {
+    position: relative;
+    top: 20px;
+    left: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(25, 151, 25);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btn .log {
+    padding: 10px 40%;
+    position: relative;
+    left: 1px;
+}
+
+.btn .log:hover {
+    background-color: rgb(22, 88, 22);
+}
+
+.btn .sign {
+    padding: 10px 20%;
+    background-color: rgb(30, 30, 255);
+}
+
+.btn .sign:hover {
+    background-color: rgb(7, 7, 161);
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    img {
+        width: 50%; /* Adjusted width for responsiveness */
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20%; /* Adjusted top position for responsiveness */
+    }
+
+    form {
+        width: 60%; /* Adjusted width for responsiveness */
+        top: 15%; /* Adjusted top position for responsiveness */
+        left: 20%; /* Adjusted left position for responsiveness */
+    }
+
+    .login {
+        padding: 70px 90px; /* Adjusted padding for responsiveness */
+        font-size: 15px; /* Adjusted font size for responsiveness */
+    }
+
+    .login input {
+        height: 30px; /* Adjusted height for responsiveness */
+        padding: 0 5px; /* Adjusted padding for responsiveness */
+        width: 150px;
+    }
+
+    .btn a {
+        top: 30px; /* Adjusted top position for responsiveness */
+        left: 20px; /* Adjusted left position for responsiveness */
+        font-size: 15px; /* Adjusted font size for responsiveness */
+    }
+
+    .btn .log {
+        padding: 5px 35%; /* Adjusted padding for responsiveness */
+    }
+    .btn .sign {
+        padding: 5px 15%; /* Adjusted padding for responsiveness */
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    img {
+        width: 50%; /* Adjusted width for responsiveness */
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20%; /* Adjusted top position for responsiveness */
+    }
+
+    form {
+        width: 60%; /* Adjusted width for responsiveness */
+        top: 15%; /* Adjusted top position for responsiveness */
+        left: 20%; /* Adjusted left position for responsiveness */
+    }
+
+    .login {
+        padding: 70px 90px; /* Adjusted padding for responsiveness */
+        font-size: 15px; /* Adjusted font size for responsiveness */
+    }
+
+    .login input {
+        height: 30px; /* Adjusted height for responsiveness */
+        padding: 0 5px; /* Adjusted padding for responsiveness */
+        width: 150px;
+    }
+
+    .btn a {
+        top: 30px; /* Adjusted top position for responsiveness */
+        left: 20px; /* Adjusted left position for responsiveness */
+        font-size: 15px; /* Adjusted font size for responsiveness */
+    }
+
+    .btn .log {
+        padding: 5px 35%; /* Adjusted padding for responsiveness */
+    }
+    .btn .sign {
+        padding: 5px 15%; /* Adjusted padding for responsiveness */
+    }
+}

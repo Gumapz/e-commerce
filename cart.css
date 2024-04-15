@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    text-align: center;
+    padding: 7px 10%;
+    background-color: #014c95;
+    width: 100%;
+    height: auto;
+}
+
+.logo img{
+    max-width: 4.5dvw;
+    height: auto;
+}
+
+.business-name{
+    position: relative;
+    font-size: 2dvw;
+    color: #fff;
+}
+
+.cart{
+    margin-top: 10%;
+    margin-left: 3dvw;
+    margin-bottom: 2%;
+    
+}
+.cart h1{
+    font-size: 2.5dvw;
+    color: #014c95;
+}
+
+.products{
+    box-shadow: 0 0 .7dvw 0 black;
+    border-radius: 10px;
+    width: 95dvw;
+    height: 34dvw;
+    position: relative;
+    left: 2.5dvw;
+}
+
+.btn{
+    position: relative;
+    right: 3%;
+    top: 40px;
+    margin-bottom: 6%;
+    text-align: right;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #014c95;
+    padding: 2dvw 1.5dvw;
+    border-radius: 10px;
+    font-size: 1.7dvw;
+    font-weight: 600;
+}
+.btn a:hover{
+    background-color: #62acf7;
+    color: black;
+}
+
+.btn label{
+    position: relative;
+    right: 8%;
+    font-size: 1.5dvw;
+    font-weight: 600;
+}
