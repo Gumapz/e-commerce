@@ -524,7 +524,6 @@ footer{
 } */
 
 
-
 .modal, .modal2, .modal3,.modal4,.modal5,.modal6,.modal7,.modal8,.modal9,.modal10,.modal11,.modal12,
 .modal13,.modal14,.modal15,.modal16,.modal17,.modal18,.modal19,.modal20,.modal21,.modal22,.modal23,.modal24,.modal25,
 .modal26,.modal27,.modal28,.modal29,.modal30,.modal31,.modal32,.modal33,.modal34,.modal35{
@@ -543,7 +542,7 @@ footer{
     margin: 15% auto; /* 15% from the top and centered */
     padding: 30px;
     border: 1px solid #888;
-    width: 55dvw; /* Could be more or less, depending on screen size */
+    width: 52dvw; /* Could be more or less, depending on screen size */
     height:auto;
     margin-top: 15%;
     border-radius: 10px;
@@ -579,10 +578,11 @@ footer{
 /* Responsive adjustments for modal */
 @media only screen and (max-width: 768px) {
     .modal-content {
-        width: 90%; /* Adjust the width for smaller screens */
+        width: 50dvw; /* Adjust the width for smaller screens */
         max-width: 300px; /* Set maximum width */
         margin: 10% auto; /* Center the modal vertically */
         padding: 15px;
+        margin-top: 15rem;
     }
 
     .close {
@@ -608,7 +608,7 @@ footer{
 }
 
 .shoes img{
-    width: 15dvw;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 .5dvw 0 rgb(155, 155, 155);
@@ -667,7 +667,7 @@ footer{
     }
 
     .shoes img {
-        width: 80%; /* Adjust image width for smaller screens */
+        width: 100%; /* Adjust image width for smaller screens */
         margin-right: 10px; /* Adjust margin for smaller screens */
     }
 
@@ -676,7 +676,7 @@ footer{
     }
 
     .size a {
-        padding: 5px; /* Adjust link padding for smaller screens */
+        padding: 4px; /* Adjust link padding for smaller screens */
         font-size: 1.5dvw; /* Adjust link font size for smaller screens */
     }
 
@@ -689,5 +689,8 @@ footer{
     .size h1 {
         font-size: 20px; /* Adjust h1 font size for smaller screens */
         top: 10px; /* Adjust h1 position for smaller screens */
+    }
+    .size{
+        margin-left: 5%;
     }
 }
