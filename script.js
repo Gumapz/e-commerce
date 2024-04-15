@@ -25,9 +25,9 @@ element.addEventListener('click', () => {
     clicked = !clicked; // toggle the clicked state
 
     if (clicked) {
-        element.textContent = "PRODUCT ▼";
+        element.textContent = "PRODUCT▼";
     } else {
-        element.textContent = "PRODUCT ▲";
+        element.textContent = "PRODUCT▲";
     }
 });
 
