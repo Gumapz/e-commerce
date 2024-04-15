@@ -453,7 +453,25 @@ footer{
     color: #111;
     text-transform: capitalize;
 }
+/* Responsive adjustments for contact section */
+@media only screen and (max-width: 768px) {
+    .contact-info {
+        grid-template-columns: repeat(auto-fill, minmax(140px, auto));
+        gap: 2rem;
+    }
 
+    .contact-info h4 {
+        font-size: 12px;
+    }
+
+    .contact-info p {
+        font-size: 12px;
+    }
+
+    .social-icon i {
+        font-size: 18px;
+    }
+}
 
 
 /* dropdown */
